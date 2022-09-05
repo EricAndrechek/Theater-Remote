@@ -135,6 +135,8 @@ html {
 }
 
 body {
+    padding-top: 10px;
+    padding-bottom: 5px;
     width: 100vw;
     margin: 0;
     height: 100vh;
@@ -194,8 +196,12 @@ body {
     font-size: 55px;
 }
 
-.AVR-power {
-    line-height: 35px;
+#avr-power {
+    padding: 10px;
+}
+
+#roku-power {
+    padding: 10px;
 }
 
 .source-icon {
@@ -397,12 +403,15 @@ body {
 #option {
     color: lightgrey;
     margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 25px;
 }
 
 #volume {
     color: lightgrey;
     margin-top: -20px;
     font-size: 20px;
+    padding: 10px;
 }
 
 .ok-container {
@@ -415,6 +424,7 @@ body {
 
 .row-1 {
     height: calc((100vh / 7) + 15px) !important;
+    margin-bottom: 10px !important;
 }
 
 #up {
@@ -487,12 +497,16 @@ body {
     margin-top: 1px;
 }
 
-.row {
-    height: calc(100vh / 7);
+div.columns.row {
+    height: calc((100vh / 7) - 5px);
     display: flex;
     align-items: center;
     padding: 5px 10px;
-    margin-bottom: 5px !important;
+    margin-bottom: 0;
+}
+
+.column {
+    padding: 0 10px !important;
 }
 
 .apps {
@@ -501,7 +515,10 @@ body {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     padding: 0 !important;
-    padding-bottom: 10px;
+    padding-bottom: 10px !important;
+    height: calc((100vh / 7) - 5px);
+    align-items: center;
+    margin-bottom: 0;
 }
 
 .apps::-webkit-scrollbar {
