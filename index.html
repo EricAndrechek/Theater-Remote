@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="user-scalable=no, initial-scale=1,
+        maximum-scale=1, minimum-scale=1, width=device-width,
+        height=device-height, target-densitydpi=device-dpi"
+        />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+        <title>Linus Remote</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d84105" />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="theme-color" content="#000000" />
+    </head>
+    <body>
+        <div class="row columns is-mobile row-1">
+            <div class="column is-3 power-parent">
+                <div id="main-power" class="circle red">
+                    <span class="material-symbols-outlined">
+                        power_settings_new
+                    </span>
+                </div>
+            </div>
+            <div class="column is-6">
+                <div class="columns is-mobile is-multiline">
+                    <div
+                        class="column is-12 columns is-centered is-mobile upper-power"
+                    >
+                        <div class="column is-6">
+                            <div id="avr-power" class="power-off">
+                                AVR
+                                <span class="material-symbols-outlined">
+                                    power_settings_new
+                                </span>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div id="roku-power" class="power-off">
+                                Roku
+                                <span class="material-symbols-outlined">
+                                    power_settings_new
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-12 source-column">
+                        <div id="source" class="source-box">
+                            Source -
+                            <span
+                                id="current-source"
+                                class="material-symbols-outlined"
+                            >
+                                connected_tv
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="columns is-mobile is-multiline">
+                    <div class="column is-12">
+                        <div id="option" class="">
+                            <span class="material-symbols-outlined">
+                                settings
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column is-12">
+                        <div id="volume" class="">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row columns is-mobile">
+            <div class="column is-half">
+                <div id="back" class="rectangle">
+                    <span class="material-symbols-outlined">
+                        keyboard_backspace
+                    </span>
+                </div>
+            </div>
+            <div class="column is-half">
+                <div id="home" class="rectangle">
+                    <span class="material-icons"> home </span>
+                </div>
+            </div>
+        </div>
+        <div class="row columns is-mobile">
+            <div class="column is-4 left-small">
+                <div id="mute" class="circle">
+                    <span class="material-symbols-outlined"> volume_off </span>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div id="up" class="rectangle">
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_up
+                    </span>
+                </div>
+            </div>
+            <div class="column is-4 right-small">
+                <div id="volume-up" class="circle">
+                    <span class="material-symbols-outlined"> volume_up </span>
+                </div>
+            </div>
+        </div>
+        <div class="row columns is-mobile is-gapless">
+            <div class="column is-4">
+                <div id="left" class="rectangle">
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_left
+                    </span>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div id="ok" class="">OK</div>
+            </div>
+            <div class="column is-4 right">
+                <div id="right" class="rectangle">
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_right
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row columns is-mobile">
+            <div class="column is-4 left-small bottom-small">
+                <div id="rewind" class="circle">
+                    <span class="material-symbols-outlined"> replay </span>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div id="down" class="rectangle">
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                    </span>
+                </div>
+            </div>
+            <div class="column is-4 right-small bottom-small">
+                <div id="volume-down" class="circle">
+                    <span class="material-symbols-outlined"> volume_down </span>
+                </div>
+            </div>
+        </div>
+        <div class="row columns is-mobile under-pad">
+            <div class="column is-4">
+                <div id="reverse" class="rectangle">
+                    <span class="material-symbols-outlined"> fast_rewind </span>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div id="play-pause" class="rectangle">
+                    <span class="material-symbols-outlined"> play_pause </span>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div id="forward" class="rectangle">
+                    <span class="material-symbols-outlined">
+                        fast_forward
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row apps">
+            <div class="app" id="disney-plus"></div>
+            <div class="app" id="apple-tv"></div>
+            <div class="app" id="hbo-max"></div>
+            <div class="app" id="youtube"></div>
+            <div class="app" id="netflix"></div>
+            <div class="app" id="f1"></div>
+            <div class="app" id="prime-video"></div>
+            <div class="app" id="hulu"></div>
+            <div class="app" id="espn"></div>
+            <div class="app" id="spotify"></div>
+            <div class="app" id="apple-music"></div>
+            <div class="app" id="peacock"></div>
+            <div class="app" id="jellyfin"></div>
+            <div class="app" id="adult-swim"></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

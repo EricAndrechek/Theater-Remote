@@ -1,0 +1,361 @@
+html {
+    width: 100vw;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-color: #000;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-color: #000;
+}
+
+:root {
+    touch-action: pan-x pan-y;
+    height: 100%;
+}
+
+* {
+    touch-action: manipulation;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.unsupported {
+    margin: auto;
+    width: 390px;
+    height: 844px;
+}
+
+.material-symbols-outlined {
+    font-size: 35px;
+}
+
+#play-pause > span.material-symbols-outlined {
+    font-size: 55px;
+}
+
+#back > span.material-symbols-outlined {
+    font-size: 55px;
+}
+
+.material-icons {
+    font-size: 50px;
+}
+
+#up > span.material-symbols-outlined {
+    font-size: 55px;
+}
+
+#down > span.material-symbols-outlined {
+    font-size: 55px;
+}
+
+#left > span.material-symbols-outlined {
+    font-size: 55px;
+}
+
+#right > span.material-symbols-outlined {
+    font-size: 55px;
+}
+
+.AVR-power {
+    line-height: 35px;
+}
+
+#current-source {
+    vertical-align: middle;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.circle {
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c3c3c;
+    color: lightgrey;
+}
+
+.rectangle {
+    position: relative;
+    display: flex;
+    height: calc((100vh / 7) * 0.75);
+    width: 100%;
+    background-color: #4a4a4a;
+    color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.power-off {
+    color: #4a4a4a;
+}
+
+.power-on {
+    color: lightgrey;
+}
+
+.power-parent {
+    padding-top: 0;
+    margin-left: 5px;
+}
+
+.red {
+    background-color: red;
+    padding-right: 2.5px;
+}
+
+.upper-power {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0 !important;
+    padding-bottom: 10px;
+}
+
+.upper-power > div.column {
+    padding-bottom: 5px;
+    padding-top: 0;
+    text-align: center;
+}
+
+.upper-power > div.column > div {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.source-column {
+    padding-top: 0;
+}
+
+.source-box {
+    border-radius: 10px;
+    background-color: #4a4a4a;
+    color: lightgrey;
+}
+
+#option {
+    color: lightgrey;
+    margin-top: 10px;
+}
+
+#volume {
+    color: lightgrey;
+    margin-top: -20px;
+    font-size: 20px;
+}
+
+#ok {
+    font-size: 40px;
+}
+
+.row-1 {
+    height: calc((100vh / 7) + 15px) !important;
+}
+
+#up {
+    margin: auto;
+    margin-left: -7.5px;
+    margin-bottom: -65px;
+    height: calc((100vh / 7) + 30px);
+    width: calc(100vh / 7);
+    padding-bottom: 60px;
+}
+
+#down {
+    height: calc((100vh / 7) + 30px);
+    width: calc(100vh / 7);
+    margin: auto;
+    margin-left: -7.5px;
+    margin-top: -45px;
+    padding-top: 55px;
+}
+
+#ok {
+    aspect-ratio: 1/1;
+    margin-left: -12.5px;
+    width: 120%;
+    border-radius: 100%;
+    border: 10px solid #000;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a4a4a;
+    color: lightgrey;
+}
+
+#left {
+    margin-left: 15px;
+    width: 110%;
+    padding-right: 35px;
+    height: calc(100vh / 7);
+}
+
+#right {
+    margin-left: -30px;
+    width: 110%;
+    height: calc(100vh / 7);
+    padding-left: 35px;
+}
+
+.left-small {
+    width: 25% !important;
+    margin: auto;
+}
+
+.right-small {
+    width: 25% !important;
+    margin: auto;
+}
+
+.bottom-small {
+    margin-top: 20px;
+}
+
+.under-pad {
+    margin-top: 1px;
+}
+
+.row {
+    height: calc(100vh / 7);
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 5px !important;
+}
+
+.apps {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 !important;
+    padding-bottom: 10px;
+}
+
+.apps::-webkit-scrollbar {
+    display: none;
+}
+
+.app {
+    aspect-ratio: 290/218;
+    height: 90%;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+#disney-plus {
+    background-image: url('images/Disney-Plus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#apple-tv {
+    background-image: url('images/Apple-TV.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hbo-max {
+    background-image: url('images/HBO-Max.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#youtube {
+    background-image: url('images/YouTube.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#netflix {
+    background-image: url('images/Netflix.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#f1 {
+    background-image: url('images/F1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#prime-video {
+    background-image: url('images/Prime-Video.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hulu {
+    background-image: url('images/Hulu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#espn {
+    background-image: url('images/ESPN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#spotify {
+    background-image: url('images/Spotify.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#apple-music {
+    background-image: url('images/Apple-Music.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#peacock {
+    background-image: url('images/Peacock.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#jellyfin {
+    background-image: url('images/Jellyfin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#adult-swim {
+    background-image: url('images/Adult-Swim.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
