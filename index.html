@@ -80,14 +80,67 @@
                         </div>
                     </div>
                     <div class="column is-12 source-column">
-                        <div id="source" class="source-box">
-                            Source -
-                            <span
-                                id="current-source"
-                                class="material-symbols-outlined"
-                            >
-                                connected_tv
-                            </span>
+                        <div id="source-box" class="select-wrapper">
+                            <div class="selector">
+                                <div class="select__trigger">
+                                    <span>
+                                        Source -
+                                        <span
+                                            class="material-symbols-outlined source-icon"
+                                            id="current-icon"
+                                        >
+                                            connected_tv
+                                        </span>
+                                    </span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options">
+                                    <span
+                                        class="custom-option selected"
+                                        data-value="roku"
+                                    >
+                                        Roku -
+                                        <span
+                                            class="material-symbols-outlined source-icon"
+                                        >
+                                            connected_tv
+                                        </span>
+                                    </span>
+                                    <span
+                                        class="custom-option"
+                                        data-value="ps5"
+                                    >
+                                        PS5 -
+                                        <span
+                                            class="material-symbols-outlined source-icon"
+                                        >
+                                            sports_esports
+                                        </span>
+                                    </span>
+                                    <span
+                                        class="custom-option"
+                                        data-value="recordplayer"
+                                    >
+                                        Record Player -
+                                        <span
+                                            class="material-symbols-outlined source-icon"
+                                        >
+                                            album
+                                        </span>
+                                    </span>
+                                    <span
+                                        class="custom-option"
+                                        data-value="switch"
+                                    >
+                                        Switch -
+                                        <span
+                                            class="material-symbols-outlined source-icon"
+                                        >
+                                            videogame_asset
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,7 +182,7 @@
             </div>
             <div class="column is-4">
                 <div id="up" class="rectangle">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined directions">
                         keyboard_arrow_up
                     </span>
                 </div>
@@ -143,7 +196,7 @@
         <div class="row columns is-mobile is-gapless">
             <div class="column is-4">
                 <div id="left" class="rectangle">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined directions">
                         keyboard_arrow_left
                     </span>
                 </div>
@@ -153,7 +206,7 @@
             </div>
             <div class="column is-4 right">
                 <div id="right" class="rectangle">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined directions">
                         keyboard_arrow_right
                     </span>
                 </div>
@@ -167,7 +220,7 @@
             </div>
             <div class="column is-4">
                 <div id="down" class="rectangle">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined directions">
                         keyboard_arrow_down
                     </span>
                 </div>
